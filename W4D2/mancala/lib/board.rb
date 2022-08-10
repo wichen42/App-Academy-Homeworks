@@ -63,5 +63,7 @@ class Board
   end
 
   def winner
+    return :draw if one_side_empty? && @cups[6].count == @cups[13].count
+    return 
   end
 end
